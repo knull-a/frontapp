@@ -13,14 +13,17 @@
       </div>
       
       <!-- Menu -->
-      <div class="flex-1 overflow-y-auto ">
+      <div class="flex-1 overflow-y-auto">
         <UNavigationMenu 
           orientation="vertical" 
-          class="px-2"
+          :class="isCollapsed ? 'px-0 text-center' : 'px-2'"
           :items="navLinks" 
           :collapsed="isCollapsed"           
           :ui="{
-            linkLeadingIcon: 'text-lg'
+            linkLeadingIcon: isCollapsed ? 'text-2xl' : 'text-lg',
+            wrapper: isCollapsed ? 'justify-center' : '',
+            link: isCollapsed ? 'justify-center' : '',
+            
           }"
         />
       </div>
