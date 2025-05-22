@@ -8,9 +8,14 @@
       </template>
       <p>This page demonstrates the sidebar with WordPress menu integration.</p>
       <template #footer>
-        <UButton color="primary" to="https://example.com">
-          Visit WordPress
-        </UButton>
+        <div class="flex items-center gap-2">
+          <UButton color="primary" to="https://example.com">
+            Visit WordPress
+          </UButton>
+          <UButton color="primary" to="/cv">
+            Тестовое резюме
+          </UButton>
+        </div>
       </template>
     </UCard>
     
